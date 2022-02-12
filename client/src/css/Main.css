@@ -71,7 +71,7 @@ font-size: 1rem;
 color: #a1a5b0;
 }
 .ownerNameAndHandle > #address{
-    word-break: break-all;
+    word-break:break-all;
 }
 
 .ownerHandle{
@@ -130,9 +130,9 @@ color: #a1a5b0;
     .owner{
         justify-content: space-evenly;
     }
-    /* .title {
-        font-size: 1rem;
-    } */
+    .title, .title > span {
+        font-size: 2.2rem;
+    }
     .ownerNameAndHandle > p {
         font-size: 0.9rem;
     }
