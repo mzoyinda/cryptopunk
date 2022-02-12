@@ -2,6 +2,7 @@ import React from 'react';
 import punkLogo from '../assets/header/cryptopunk-logo.png';
 import searchIcon from '../assets/header/search.png';
 import themeSwitchIcon from '../assets/header/theme-switch.png';
+import '../css/header.css';
 
 const Header = () => {
   return (

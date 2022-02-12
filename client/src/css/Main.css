@@ -70,6 +70,9 @@
 font-size: 1rem;
 color: #a1a5b0;
 }
+.ownerNameAndHandle > #address{
+    word-break: break-all;
+}
 
 .ownerHandle{
     color: #0bd5e4;

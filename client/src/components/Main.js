@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import  twitterLogo  from '../assets/owner/twitter.png';
 import  instagramLogo  from '../assets/owner/instagram.png';
 import moreIcon from '../assets/owner/more.png';
-import './Main.css';
+import '../css/Main.css';
 
 
 const Main = ({selectedPunk, punkListData}) => {
@@ -31,7 +31,7 @@ const Main = ({selectedPunk, punkListData}) => {
                       <img src={activePunk.owner.profile_img_url} alt="" />
                   </div>
                   <div className="ownerNameAndHandle">
-                    <p>{activePunk.owner.address}</p>
+                    <p id="address">{activePunk.owner.address}</p>
                     <p className="ownerHandle">@oyin_dawodu</p>
                 </div>
               </div>
