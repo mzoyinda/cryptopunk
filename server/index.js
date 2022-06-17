@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 
 app.get('/api', (req, res) => {
   request(
-    { url: 'https://testnets-api.opensea.io/api/v1/asset_contract/0x0c611A25e2728e7ada47812c875fe46cBf76E545' },
+    { url: 'https://testnets-api.opensea.io/api/v1/assets?asset_contract_address=0x0c611A25e2728e7ada47812c875fe46cBf76E545&order_direction=asc' },
     (error, response, body) => {
       if (error || response.statusCode !== 200) {
         return res.status(500).json({ type: 'error', message: err.message });
