@@ -6,7 +6,7 @@ import '../css/Main.css';
 
 
 const Main = ({selectedPunk, punkListData}) => {
-    const [activePunk, setActivePunk] = useState(punkListData.length-1)
+    const [activePunk, setActivePunk] = useState(punkListData[0])
     
     useEffect(() => {
         setActivePunk(punkListData[selectedPunk])
