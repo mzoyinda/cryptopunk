@@ -10,6 +10,7 @@ const Main = ({selectedPunk, punkListData}) => {
     
     useEffect(() => {
         setActivePunk(punkListData[selectedPunk])
+        console.log(punkListData);
     }, [punkListData, selectedPunk])
 
   return (
@@ -37,14 +38,11 @@ const Main = ({selectedPunk, punkListData}) => {
               </div>
           </div>
           <div className="ownerDetails">
-                <div className="ownerLink">
-                    <img src={instagramLogo} alt="" />
+                <div className="ownerLink instagram">
                 </div>
-                <div className="ownerLink">
-                    <img src={twitterLogo} alt="" />
+                <div className="ownerLink twitter">
                 </div>
-                <div className="ownerLink">
-                    <img src={moreIcon} alt="" />
+                <div className="ownerLink more">
                 </div>
             </div>
     </div>

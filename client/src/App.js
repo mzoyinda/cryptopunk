@@ -17,7 +17,8 @@ function App() {
       .then((res) => {
         const punks = res.data.assets;
         console.log(punks);
-        setPunkListData(punks);
+        const reversed = [...punks].reverse();
+        setPunkListData(reversed);
       });
   }, []);
 

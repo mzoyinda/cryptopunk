@@ -4,16 +4,23 @@ import '../css/Punklist.css';
 
 
 const PunkList = ({punkListData, setSelectedPunk}) => {
+
+
     return (
         <div className="punkList">
             {punkListData.map(punk => (
-                <div onClick={()=> setSelectedPunk(punk.token_id)}>
+                <div
+                    onClick={() => { setSelectedPunk(punk.token_id) }}
+                    className="card"
+                >
+                    <span>Click Me!</span>
                     <CollectionCard
                         key={punk.token_id}
                         id={punk.token_id}
                         name={punk.name}
                         traits={punk.traits}
                         image={punk.image_url}
+                      
                     />
                 </div>
             ))}
