@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "/api"
+        "https://cryptopunks-1j2y.onrender.com/api"
       )
       .then((res) => {
         const punks = res.data.assets;
