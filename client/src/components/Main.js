@@ -29,10 +29,10 @@ const Main = ({selectedPunk, punkListData}) => {
               </div>
               <div className="owner">
                   <div className="ownerImageContainer">
-                      <img src={activePunk.owner.profile_img_url} alt="" />
+                      <img src={activePunk.creator.profile_img_url} alt="" />
                   </div>
                   <div className="ownerNameAndHandle">
-                    <p id="address">{activePunk.owner.address}</p>
+                    <p id="address">{activePunk.creator.address}</p>
                     <p className="ownerHandle">@oyin_dawodu</p>
                 </div>
               </div>
