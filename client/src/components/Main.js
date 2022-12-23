@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import  twitterLogo  from '../assets/owner/twitter.png';
-import  instagramLogo  from '../assets/owner/instagram.png';
-import moreIcon from '../assets/owner/more.png';
+// import  twitterLogo  from '../assets/owner/twitter.png';
+// import  instagramLogo  from '../assets/owner/instagram.png';
+// import moreIcon from '../assets/owner/more.png';
 import '../css/Main.css';
 
 
