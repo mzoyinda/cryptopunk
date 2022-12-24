@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {punkListData.length > 0 && (
+      {punkListData.length > 0 ? (
         <>
           <Main punkListData={punkListData} selectedPunk={selectedPunk}/>
           <PunkList
@@ -33,7 +33,7 @@ function App() {
             setSelectedPunk={setSelectedPunk}
           />
         </>
-     )}
+     ) : <h1 style={{color:"white", textAlign:"center"}}>Loading...</h1>}
     </div>
   );
 }
